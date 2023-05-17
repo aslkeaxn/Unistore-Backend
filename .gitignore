@@ -1,0 +1,22 @@
+node_modules/
+.expo/
+dist/
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+.vscode/
+Frontend/src/constants/base.js
+./Frontend/src/constants/base.js
+Frontend/src/constants/base.
+./Frontend/src/constants/base.
+
+# macOS
+.DS_Store
+Frontend/src/constants/base.js
+Frontend/src/constants/base.js
+Frontend/src/constants/base.js
