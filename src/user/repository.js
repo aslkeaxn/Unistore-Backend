@@ -12,7 +12,8 @@ async function create(user) {
 
 async function readByEmail(email) {
     try {
-        return await User.findOne({ email });
+        const query = { email: { $regex: new RegExp('^' + email + '$', 'i') } };
+        return await User.findOne(query);
     } catch (error) {
         Helper.raiseCustomError(500, error, Errors.ServerError);
     }
