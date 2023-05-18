@@ -38,6 +38,8 @@ async function validateEmailVerification(email, registrationVerificationCode) {
             Errors.InvalidVerificationCodeError
         );
     }
+
+    await VerificationRepository.deleteById(verification._id);
 }
 
 async function createVerificationCode(userId, verificationType) {
